@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ac.htmlUnitYest" time="2.419" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ac.htmlUnitYest" time="1.503" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="app.domain" value="https://https.cio.gov"/>
+    <property name="app.domain" value="http://35.172.114.58:31029"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el8_2.x86_64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.262-b10"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.262.b10-0.el8_2.x86_64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean -Dapp.domain=https://https.cio.gov -Dapp.domain2=https://www.google.com -Dtest=ac.htmlUnitYest test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean -Dapp.domain=http://35.172.114.58:31029 -Dapp.domain2=http://100.26.206.80:81 -Dtest=ac.htmlUnitYest test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -57,11 +57,24 @@
     <property name="maven.home" value="/usr/share/maven"/>
     <property name="file.separator" value="/"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
-    <property name="app.domain2" value="https://www.google.com"/>
+    <property name="app.domain2" value="http://100.26.206.80:81"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="htmlUnitYestTestProduction" classname="ac.htmlUnitYest" time="1.916"/>
-  <testcase name="htmlUnitYestTest" classname="ac.htmlUnitYest" time="0.459"/>
+  <testcase name="htmlUnitYestTestProduction" classname="ac.htmlUnitYest" time="1.288">
+    <failure message="Invalid website title: Null value" type="java.lang.AssertionError">java.lang.AssertionError: Invalid website title: Null value
+	at ac.htmlUnitYest.htmlUnitYestTestProduction(htmlUnitYest.java:155)
+</failure>
+    <system-out><![CDATA[DOMAIN: http://100.26.206.80:81
+UTIL GETHOST: http://100.26.206.80:81
+HOST: 100.26.206.80
+PROTOCOL: http
+]]></system-out>
+    <system-err><![CDATA[[main] INFO ac.htmlUnitYest - Start test of web page: Welcome to Maven World ....
+[main] INFO ac.htmlUnitYest - Page title is: Empty
+[main] INFO ac.htmlUnitYest - Quitting driver
+]]></system-err>
+  </testcase>
+  <testcase name="htmlUnitYestTest" classname="ac.htmlUnitYest" time="0.138"/>
 </testsuite>

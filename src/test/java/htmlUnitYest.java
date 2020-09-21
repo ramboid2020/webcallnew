@@ -80,7 +80,7 @@ public class htmlUnitYest {
 			//log.info("Page title is: {}", driver.getTitle());
 
 			// Check if valid title
-			if ( driver.getTitle() != null) {
+			if ( driver.getTitle().trim() != "") {
 				log.info("Page title is: {}", driver.getTitle());
 			} else {
 				log.info("Page title is: {}", "Empty");
@@ -148,7 +148,7 @@ public class htmlUnitYest {
 			driver.get(url.trim());
 
 			// Check if valid title
-			if ( driver.getTitle() != null) {
+			if ( driver.getTitle().trim() != "") {
 				log.info("Page title is: {}", driver.getTitle());
 			} else {
 				log.info("Page title is: {}", "Empty");
