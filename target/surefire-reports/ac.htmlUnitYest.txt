@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ac.htmlUnitYest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.626 s <<< FAILURE! - in ac.htmlUnitYest
+htmlUnitYestTestProduction(ac.htmlUnitYest)  Time elapsed: 1.396 s  <<< FAILURE!
+java.lang.AssertionError: Invalid website title: Null value
+	at ac.htmlUnitYest.htmlUnitYestTestProduction(htmlUnitYest.java:155)
+
