@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ac.htmlUnitYest" time="6.468" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ac.htmlUnitYest" time="4.659" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="app.domain" value="www.google.com"/>
+    <property name="app.domain" value="www.foxnews.com"/>
     <property name="sun.boot.library.path" value="/usr/java/jdk1.8.0_261-amd64/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.261-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/usr/java/jdk1.8.0_261-amd64/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean -Dapp.domain=www.google.com -Dapp.domain2=www.foxnews.com -Dtest=ac.htmlUnitYest test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean -Dapp.domain=www.foxnews.com -Dapp.domain2=www.foxnews.com -Dtest=ac.htmlUnitYest test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
@@ -62,6 +62,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="htmlUnitYestTestProduction" classname="ac.htmlUnitYest" time="5.801"/>
-  <testcase name="htmlUnitYestTest" classname="ac.htmlUnitYest" time="0.624"/>
+  <testcase name="htmlUnitYestTest" classname="ac.htmlUnitYest" time="3.561"/>
 </testsuite>
